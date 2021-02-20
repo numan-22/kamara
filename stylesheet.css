@@ -1,0 +1,840 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+  
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style-type: none;
+}
+@font-face{
+    font-family: "ProximaNova-Light";
+    src: url("fonts/proximanova-light.woff") ;
+}
+@font-face{
+    font-family: "Bodoni-Regular";
+    src: url("fonts/bodoni-regular.woff") ;
+}
+
+/* menu */
+.head-space{
+    height: 100px;
+}
+.navv{
+    box-shadow: 0 0 10px 0 grey;
+    background-color: white;
+}
+.nav-text{
+    color: #190329;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "ProximaNova-Light";
+}
+.nav-text:hover{
+    color: #190329;
+}
+.navbar-expand-lg{
+    padding: 21px 97px !important;
+}
+.nav-space{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.icon{
+    color: #190329;
+}
+/* banner */
+.top-banner{
+    position: relative;
+}
+.top-banner::after{
+    content: "";
+    position: absolute;
+    background-image: url("images/banner-after.png");
+    right: 0;
+    height: 100%;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    top: 0;
+}  
+.banner{
+    padding: 100px 0;
+    margin: 0 auto 0 0;
+    max-width: 550px;
+   
+}
+.banner-heading{
+    border-bottom: dotted;
+}
+.banner-heading h1{
+    color: #190329;
+    font-weight: 400;
+    font-family: "Bodoni-Regular";
+    font-size: 60px;
+}
+.banner-heading h6{
+    font-family: "ProximaNova-Light";
+    color: grey;
+    font-size: 28px;
+}
+.banner-heading p{
+    font-family: "ProximaNova-Light";
+    color: grey;
+    font-size: 28px;
+    padding: 0 0 32px 0;
+}
+.kontakt a{
+    background-color: #190329;
+    border-radius: 23px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 56px 0 0 0;
+    position: relative;
+    z-index: 1;
+}
+.kontakt a:hover{
+    color: white;
+    text-decoration: none;
+}
+/* banner bottom section */
+.banner-bottom{
+    background-color: #f7f5f8;
+    padding: 0 0 80px 0;
+}
+.wussten{
+    padding: 98px 0 18px 0;
+}
+.wussten h3{
+    font-size: 35px;
+    font-family: "Bodoni-Regular";
+    font-weight: 600;
+}
+.wussten-para{
+    border-right: dotted;
+}
+.wussten-para p{
+    font-size: 20px;
+    font-family: "ProximaNova-Light";
+    color: grey;
+   
+    
+}
+.video-boxcol{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+.video-box{
+   position: relative;
+   z-index: 4;
+}
+.video-box img{
+    max-width: 100%;
+    height: 276px;
+    border-radius: 6px;
+}
+.video-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: fit-content;
+    text-align: center;
+    
+}
+.video-icon i{
+    color: white;
+    
+    font-size: 63px;
+}
+
+/* user */
+.user-container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.user-row{
+    position: relative;
+    z-index: 1;
+    transform: translate(0%, 19%);
+} 
+.top-user{
+    position: relative;
+}
+.user{
+ 
+    padding: 103px 0 0px 0;
+
+}
+.top-user::after{
+    position: absolute;
+    top: 0;
+    right: 7%;
+    content: " ";
+    background-color: #190329 ;
+    width: 35%;
+    height: 100%;
+}
+.user h1{
+    color: #190329;
+    font-family: "Bodoni-Regular";
+    font-weight: 600;
+    font-size: 35px;
+}
+.box-1{
+    background-color: white;
+    padding: 62px 0px;
+    text-align: center;
+    box-shadow: 0 0 8px 0 grey;
+    min-height: 395px;
+}
+
+.user-icon img{
+    max-width: 100%;
+}
+.user-text{
+    margin: 36px auto 0 auto;
+    max-width: 196px;
+}
+.user-text h6{
+    color: #190329;
+    font-weight: 600;
+    font-family: "ProximaNova-Light";
+    font-size: 20px;
+}
+.user-text p{
+    color: grey;
+    font-weight: 400;
+    font-family: "ProximaNova-Light";
+    font-size: 20px;
+}
+/* about us */
+.about-bg{
+    background-image: url("images/about-back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 77px 0 0 0;
+    height: 100vh;
+
+}
+.about-heading h1{
+    font-family: "Bodoni-Regular";
+    font-size: 70px;
+    color: white;
+    font-weight: 600;
+    border-bottom: dotted;
+    display: inline-block;
+    padding: 0 0 21px 0;
+}
+.about-row{
+    padding: 93px 0 0 0;
+}
+.about-para p{
+    color: white;
+    font-family: "ProximaNova-Light";
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0 0 13px 0;
+}
+/* dear design */
+.designer-team{
+    position: relative;
+}
+.designer-team::before,.designer-team-2::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    content: "";
+    padding: 87px 0;
+    background-color: #F7F5F8;
+    clip-path: polygon(0 0, 219% 0, -113% 147%, 0 100%);
+}
+
+.dear-design{
+    display: flex;
+    z-index: 1;
+    position: relative;
+
+    max-width: 93%;
+    margin-left: auto;
+    
+}
+/* .dear-design:nth-child(even){
+    flex-direction: row-reverse;
+} */
+
+.dear-design-text{
+    width: 50%;
+    max-width: 427px;
+    padding: 40px 0 15px 0;
+}
+.dear-design-text h1{
+    color: #190329;
+    font-family: "Bodoni-Regular";
+    font-weight: 300;
+    font-size: 70px;
+}
+.dear-design-text h3{
+    font-size: 35px;
+    font-family: "ProximaNova-Light";
+    font-weight: 300;
+    color: #707070;
+}
+.dear-design-text h6{
+    font-size: 20px;
+    font-family: "ProximaNova-Light";
+    font-weight: 300;
+  
+}
+.dear-design-text p{
+    font-size: 20px;
+    font-family: "ProximaNova-Light";
+    font-weight: 300;
+    font-style: italic;
+    color: grey;
+  
+}
+.designer-image{
+    width: 55%;
+   position: absolute;
+   right: 0;
+   top: 0;
+ 
+    
+}
+.designer-image img{
+    max-width: 100%;
+}
+
+/* Der Gründer */
+.designer-team-2{
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+.designer-team-2::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    content: "";
+    padding: 87px 0;
+    background-color: #F7F5F8;
+    clip-path: polygon(0 0, 219% 0, -113% 147%, 0 100%);
+}
+.dear-gurander{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    max-width: 89%;
+
+}
+.designer-image-2{
+    width: 55%;
+    position: absolute;
+    left: 0;    
+}
+.designer-image-2 img{
+   max-width: 100%;
+
+}
+.dear-design-text-2{
+    width: 50%;
+    margin-left: auto;
+    max-width: 454px;
+    padding: 27px 0 0 14px;
+}
+.dear-design-text-2 h1{
+    color: #190329;
+    font-family: "Bodoni-Regular";
+    font-weight: 300;
+    font-size: 70px;
+}
+.dear-design-text-2 h3{
+    font-size: 35px;
+    font-family: "ProximaNova-Light";
+    font-weight: 300;
+    color: #707070;
+    margin: 0 0 20px 0;
+}
+.dear-design-text-2 h6{
+    font-size: 20px;
+    font-family: "ProximaNova-Light";
+    font-weight: 300;
+    margin: 0;
+  
+}
+.dear-design-text-2 p{
+    font-size: 20px;
+    font-family: "ProximaNova-Light";
+    font-weight: 300;
+    font-style: italic;
+    color: grey;
+  
+}
+/* zum */
+.zum{
+    padding: 130px 0 55px 0;
+    position: relative;
+    z-index: 0;
+   
+}
+.zum-heading h1{
+    color: #190329;
+    font-family: "Bodoni-Regular";
+    font-size: 35px;
+    text-align: center;
+    font-weight: 300;
+}
+.zum-row{
+    display: flex;
+    margin: 108px auto 0 auto;
+    max-width: 1085px;
+    justify-content: space-between;
+   
+}
+.zum::before{
+    position: absolute;
+    content: " ";
+    left: 0;
+    bottom: 0px;
+    /* clip-path: polygon(0% 25%, 183% 0, 100% 113%, 0 111%); */
+    background: #190329;
+    padding: 0px 20px;
+    height: 100%;
+}
+.zum-1{
+    text-align: center;
+    width: 20%;
+}
+.zum-1 img{
+ max-width: 100%;
+}
+.zum-text{
+    padding: 0 0 31px 0;
+}
+.zum-text h6{
+    color: #190329;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "ProximaNova-Light";
+    padding: 58px 0 22px 0;
+}
+.zum-text p{
+    font-size: 20px;
+    font-family: "ProximaNova-Light";
+    color: grey;
+    font-weight: 400;
+    text-align: center;
+}
+/* Das sagen unserer Kunden */
+.das-sagan-bg{
+    background-color:#190329 ;
+    width: 100%;
+    height: 100vh;
+    transform: skewY(5deg);
+
+}
+
+.das-sagan-heading h1{
+    color: white;
+    font-weight: 300;
+    font-family: "Bodoni-Regular";
+    font-size: 35px;
+    transform: skewY(-5deg);
+    text-align: center;
+    padding: 170px 0;
+
+}
+/* owl carousal */
+.team{
+    margin: -180px 0 0 0;
+}
+.team-bg{
+    background-color: white;
+    padding: 14px 10px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0px 7px 0px grey;
+    margin: 0 0 42px 0;
+}
+.team-image{
+    width: 35%;
+}
+.team-image img{
+    max-width: 100%;
+}
+.comma-bg{
+    background: url(images/coma.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 10px;
+    width: 55%;
+   
+
+}
+.team-text{
+    margin: 0 auto;
+    max-width: 325px;
+    padding: 10px 0 0 0;
+}
+.team-text p{
+    font-size: 14px;
+    color: #707070;
+    font-weight: 300;
+    font-family: "ProximaNova-Light";
+}
+.team-text h3{
+    font-size: 32px;
+    color:#190329 ;
+    font-weight: 300;
+    padding: 3px 0 17px 0;
+}
+.team-text h6{
+    font-size: 16px;
+    color: #707070;
+    font-weight: 300;
+}
+
+.owl-theme .owl-nav span{
+    display: none;
+}
+.owl-theme .owl-nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 7%;
+}
+.owl-prev::after{
+    position: absolute;
+    content:"\f060";
+    font-family: FontAwesome;
+    color:#190329 ;
+    bottom: 0;
+   background-color: #f7f5f8;
+   padding: 6px 17px;
+}
+.owl-prev:hover::after,.owl-next:hover::before{
+    color: white ;
+    background-color:#190329;
+ 
+}
+.owl-next::before{
+    position: absolute;
+    content:"\f061";
+    font-family: FontAwesome;
+    color:#190329 ;
+    bottom: 0;
+    background-color: #f7f5f8;
+    padding: 6px 17px;
+    /* margin: 0 35px; */
+}
+/* brand logos */
+.brand{
+    margin-top: 70px;
+   
+}
+.brandlogo-bg{
+ background-color: #f7f5f8;
+ width: 100%;
+ padding: 10px 0 72px 0;
+ position: relative;
+}
+.brandlogo-bg::before{
+    width: 81%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-image: url("images/Path-157.png");
+    background-position: left bottom;
+    padding: 370px 0;
+}
+.brandlogo-bg::after{
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-image: url(images/partners-back.png);
+    background-size: contain;
+    background-position: right bottom;
+    padding: 320px 0;
+}
+.brand-row{
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    padding: 75px 0 0 0;
+    text-align: center;
+    
+}
+.brand-1{
+    padding: 60px 0;
+}
+.brand-1 img{
+    max-width: 100%;
+}
+/* contact */
+.contact{
+    display: flex;
+    justify-content: space-between;
+
+}
+.contact-image{
+    width: 30%;
+    margin: auto;
+}
+.contact-image img{
+    width: 100%;
+}
+
+.contact-bg{
+    background-color:#f7f5f8;
+    width: 50%;
+    padding: 100px 0 59px 82px;
+    clip-path: polygon(9% 0%, 100% 0, 100% 100%, 0% 100%);
+    position: relative;
+}
+.contact-bg::before{
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+   top: 0;
+   bottom: 0;
+    content: "";
+    background: url("images/Line-7.png");
+    background-position: left bottom;
+   height: 100%;
+  
+    background-repeat: no-repeat;
+}
+.contact-heading h3{
+    font-family: "Bodoni-Regular";
+    font-weight: 600;
+    font-size: 35px;
+    color:#190329 ;
+}
+.form-text{
+    color:#190329;
+    font-family: "ProximaNova-Light";
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 0 0 0px;
+}
+.form-field{
+    position: relative;
+    z-index: 1;
+}
+.form-field input[type=text]{
+    background: white;
+    border: 1px solid #190329;
+    padding: 7px 3px;
+    display: inline-block;
+    color: #190329;
+    width: 85%;
+    outline: none;
+}
+.form-field input[type=text]:focus,.form-field textarea:focus{
+    border-left: 4px solid #190329;
+}
+.form-field textarea{
+    background: white;
+    border: 1px solid #190329;
+    color: #190329;
+    width: 85%;
+    outline: none;
+    display: inline-block;
+    min-height: 160px;
+    padding: 0 3px;
+    resize: none;
+}
+/* footer */
+.footer-bg{
+    background-color:  #190329;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.footer-contact,.footer-service,.footer-info {
+    display: flex;
+    align-items: baseline;
+}
+
+footer p,footer ul li a {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+  margin: 0 0 0 20px;
+  
+}
+footer ul li a:hover{
+    text-decoration: none;
+}
+
+
+
+.footer-icon ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-logo {
+    text-align: right;
+
+    margin: 30px 0 0 0;
+}
+
+.footer-icon ul li a {
+    font-size: 25px;
+}
+/* responsive */
+@media screen and (max-width:1024px){
+    .designer-image-2 {
+        width: 50%;
+    }
+    .dear-gurander {
+      
+        max-width: 98%;
+    }
+}
+@media screen and (max-width:768px){
+    
+    .top-banner::after{
+        display: none;
+    }
+    .designer-image,.designer-image-2{
+        position: static;
+    }
+    .dear-design,.dear-gurander{
+        flex-direction: column;
+    }
+    .dear-design-text {
+        width: 100%;
+        max-width: 700px;
+        padding: 40px 0px 15px 15px;
+    }
+    .dear-design {
+       
+        max-width: 100%;
+        
+    }
+    .designer-image ,.designer-image-2 {
+        width: 100%;
+        
+    }
+    .dear-design-text-2 {
+        width: 100%;
+        
+        max-width: 745px;
+    }
+    .zum::before{
+        display: none;
+    }
+    .owl-theme .owl-nav {
+        width: 12%;
+    }
+    .brandlogo-bg::before {
+        width: 100%;
+    }
+    .nav-space{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px){
+    .zum-row{
+        flex-direction: column;
+    }
+    .zum-1 {
+        width: 100%;
+    }
+    .zum {
+        padding: 30px 0 55px 0;
+    }
+    .team-bg{
+        flex-direction: column;
+    }
+    .team-image {
+        width: 100%;
+    }
+    .comma-bg{
+        width: 100%;
+    }
+    .team-text {
+        max-width: 420px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact-image {
+        width: 80%;
+        margin-top: 10px;
+    }
+    .contact-bg {
+        width: 100%;
+    }
+    .navbar-expand-lg {
+        padding: 21px 23px !important;
+    }
+    .user {
+        padding: 27px 0 0px 0;
+    }
+    .user-row {
+       
+      
+        transform: translate(0%, 5%);
+    }
+    .banner-heading h1{
+        font-size: 36px;
+    }
+    .banner-heading h6,.banner-heading p,.team-text h3  {
+        font-size: 24px;
+    }
+    .wussten {
+        padding: 34px 0 18px 0;
+    }
+    .wussten-para p,.about-para p,.dear-design-text-2 h1,.dear-design-text h6,.dear-design-text-2 h6,.dear-design-text-2 p,.zum-text p  {
+        font-size: 18px;
+    }
+    .box-1{
+        min-height: 0;
+        margin: 0 0 20px 0;
+    }
+    .about-heading h1,.dear-design-text h1,.dear-design-text-2 h1  {
+       
+        font-size: 48px;
+    }
+    .dear-design-text h3,.dear-design-text-2 h3 {
+        font-size: 28px;
+    }
+    .das-sagan-heading h1 {
+       
+        font-size: 30px;
+    }
+    .owl-theme .owl-nav {
+        width: 26%;
+    }
+}
